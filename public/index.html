@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container py-4">
+
+    <h1 class="text-center">Simple Blog Platform</h1>
+
+    <div class="card p-4 my-4">
+        <h2>Create a Blog Post</h2>
+        <input type="text" id="title" class="form-control my-2" placeholder="Title">
+        <textarea id="body" class="form-control my-2" placeholder="Content"></textarea>
+        <input type="text" id="author" class="form-control my-2" placeholder="Author">
+        
+        <!-- Buttons -->
+        <button id="createBtn" class="btn btn-primary w-100" onclick="createBlog()">Create</button>
+        <button id="updateBtn" class="btn btn-success w-100 mt-2" style="display: none;" onclick="updateBlog()">Update</button>
+    </div>
+
+    <h2>All Blog Posts</h2>
+    <div id="blogs" class="mt-3"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
